@@ -1012,3 +1012,18 @@ table.slots{width:100%;min-width:0;background:#fff;border-radius:14px;overflow:h
 .logo.light .wm{color:#fff}
 .logo.light .wm b{color:#a6f04a}
 @media(max-width:420px){.logo{font-size:21px}.logo .logo-mark{width:36px;height:36px}}
+
+/* ===== Fixes: footer logo + app phones ===== */
+.fcol>a.logo{display:flex;align-items:center;margin:0;padding:0;font-size:25px}
+.fcol>a.logo:hover{color:#fff;padding-left:0}
+.phone-b{left:132px}
+.phone-a{width:156px;padding:0 20px 0 0}
+.phone-a .phone-logo{filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}
+.phone-a b{font-size:15px}
+@media(max-width:900px){.phones{margin-bottom:64px}.app-feats{margin-top:8px}}
+@media(max-width:900px){.foot-cols{padding-top:38px}}
+
+/* ===== Pickup banner without photo + logo hover ===== */
+.v-pick{background:radial-gradient(800px 380px at 80% 10%,rgba(166,240,74,.18),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(47,168,79,.25),transparent 60%),linear-gradient(120deg,#05301a,#0c4f27)}
+.v-pick:before{display:none}
+.logo:hover .logo-mark{transform:rotate(-10deg) scale(1.07)}
