@@ -1027,3 +1027,10 @@ table.slots{width:100%;min-width:0;background:#fff;border-radius:14px;overflow:h
 .v-pick{background:radial-gradient(800px 380px at 80% 10%,rgba(166,240,74,.18),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(47,168,79,.25),transparent 60%),linear-gradient(120deg,#05301a,#0c4f27)}
 .v-pick:before{display:none}
 .logo:hover .logo-mark{transform:rotate(-10deg) scale(1.07)}
+
+/* ===== Contact details removed: helper styles ===== */
+.dlink{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:var(--g);font-weight:600;font-size:14px}
+.dlink .ic{width:15px;height:15px}
+.fmsg{margin-top:6px}
+.fmsg .btn{border-radius:12px}
+.footer .fmsg .btn{display:inline-flex!important;width:auto;margin:0!important;padding:10px 20px!important;color:#06371a!important}
