@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule Pickup – ScrapAdda</title>
+<meta name="description" content="Book a free doorstep scrap pickup in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10zM2 21c0-3 1.9-5.5 6-7"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></symbol>
+  <symbol id="i-recycle" viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14"/><path d="M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7H5a2 2 0 010-4h13v4M3 5v14a2 2 0 002 2h15V7"/><circle cx="16" cy="14" r="1"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.8 0L2 12V2h10l8.6 8.6a2 2 0 010 2.8z"/><circle cx="7" cy="7" r="1"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-city" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></symbol>
+  <symbol id="i-phone2" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path d="M22.5 6.4a2.8 2.8 0 00-2-2C18.8 4 12 4 12 4s-6.800 0-8.500.4a2.800 2.800 0 00-2 2C1 8.100 1 12 1 12s0 3.900.5 5.600a2.800 2.800 0 002 2C5.200 20 12 20 12 20s6.800 0 8.500-.4a2.800 2.800 0 002-2C23 15.900 23 12 23 12s0-3.900-.5-5.600z"/><path d="M9.800 15.200l5.700-3.200-5.700-3.200z"/></symbol>
+</svg>
+
+
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fc15e"/><stop offset="1" stop-color="#0b6a30"/></linearGradient></defs><rect width="48" height="48" rx="13" fill="url(#lg1)"/><g fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M13.66 20.24A11 11 0 0 1 34.34 20.24"/><path d="M34.34 27.76A11 11 0 0 1 13.66 27.76"/></g><g fill="#fff"><polygon points="38.1,18.9 34.9,25.5 30.6,21.6"/><polygon points="9.9,29.1 13.1,22.5 17.4,26.4"/></g><path d="M24 17.5c4 2.2 4.4 8.2 0 12.5-4.4-4.3-4-10.3 0-12.5z" fill="#b6f55a"/><path d="M24 20v8" stroke="#0b6a30" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <span class="wm">Scrap<b>Adda</b></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="sell-scrap.html">Sell Scrap</a>
+      <a href="pickup.html" class="active">Pickup</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="pickup.html" class="menu-cta">Book a Free Pickup</a>
+    </nav>
+    <a href="pickup.html" class="btn btn-solid btn-sm nav-cta"><svg class="ic"><use href="#i-calendar"/></svg> Book Pickup</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+
+<section class="pb2 v-pick">
+  <img class="bgimg" src="https://images.pexels.com/photos/16708402/pexels-photo-16708402.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+  <div class="container pk-grid">
+    <div class="pk-l">
+      <nav class="crumbs "><a href="index.html">Home</a><span>/</span><b>Schedule Your Pickup</b></nav>
+      <h1>Book Your Free<br>Scrap <em>Pickup</em></h1>
+      <p>Fill in your details and our team will collect your scrap from your doorstep.</p>
+      <ul class="pb-chips"><li><svg class="ic"><use href="#i-check"/></svg>Same-day slots</li><li><svg class="ic"><use href="#i-check"/></svg>Verified pickup team</li><li><svg class="ic"><use href="#i-check"/></svg>Instant payment</li></ul>
+    </div>
+    <div class="pk-card">
+      <span class="live"><i></i> Slots open today</span>
+      <h3>Next available pickup</h3>
+      <div class="slot-big"><svg class="ic"><use href="#i-clock"/></svg><div><b>Today</b>3 PM – 6 PM</div></div>
+      <ul><li><svg class="ic"><use href="#i-check"/></svg>No pickup charges</li><li><svg class="ic"><use href="#i-check"/></svg>Digital weighing</li><li><svg class="ic"><use href="#i-check"/></svg>Cash or UPI on the spot</li></ul>
+      <a href="pickup.html" class="btn btn-lime btn-block">Book Now <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <small>or call <a href="tel:+919876543210">+91 98765 43210</a></small>
+    </div>
+  </div>
+</section><!-- PICKUP -->
+<section class="container pickup-wrap" id="pickup">
+  <div class="pickup">
+    <div class="pk-form">
+      <h2>Schedule Your<br><em>Scrap Pickup</em></h2>
+      <p class="sub">Enter your details and our team will pick up your scrap from your doorstep.</p>
+      <form id="pickupForm" novalidate>
+        <div class="row">
+          <div class="fld"><svg class="ic"><use href="#i-user"/></svg><input type="text" name="name" placeholder="Your Name"></div>
+          <div class="fld"><svg class="ic"><use href="#i-phone"/></svg><input type="tel" name="phone" placeholder="Phone Number"></div>
+        </div>
+        <div class="fld"><svg class="ic"><use href="#i-recycle"/></svg>
+          <select name="type"><option value="">Select Scrap Type</option><option>Paper Scrap</option><option>Plastic Scrap</option><option>Metal Scrap</option><option>E-Waste</option><option>Other Scrap</option></select>
+        </div>
+        <div class="fld"><svg class="ic"><use href="#i-pin"/></svg><input type="text" name="address" placeholder="Enter Pickup Address"></div>
+        <div class="fld"><svg class="ic"><use href="#i-calendar"/></svg><input type="datetime-local" name="when" id="whenInput"></div>
+        <button type="submit" class="btn btn-solid btn-block">Book Free Pickup <svg class="ic"><use href="#i-arrow"/></svg></button>
+        <p class="safe"><svg class="ic"><use href="#i-shield"/></svg> No hidden charges. 100% safe &amp; secure.</p>
+        <p class="err" id="formErr"></p>
+      </form>
+    </div>
+    <div class="pk-art">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=80&auto=format&fit=crop" alt="Pickup truck" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&q=80&auto=format&fit=crop'">
+      <div class="pk-strip">
+        <div><svg class="ic"><use href="#i-truck"/></svg><p><b>Free Pickup</b><br>at Your Doorstep</p></div>
+        <div><svg class="ic"><use href="#i-recycle"/></svg><p><b>Trained &amp; Verified</b><br>Collection Team</p></div>
+        <div><svg class="ic"><use href="#i-lock"/></svg><p><b>Safe &amp; Transparent</b><br>Process</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt"><div class="container"><div class="head fade"><small>How It Works</small><h2>Our 6-Step Scrap Selling Process</h2><p>From booking to payment — everything is simple and transparent.</p></div>
+<div class="p6">
+<div class="p6c fade"><span class="n">1</span><span class="bic"><svg class="ic"><use href="#i-calendar"/></svg></span><h3>Book a Pickup</h3><p>Fill the form or call us. Choose your date and a convenient time slot.</p></div><div class="p6c fade"><span class="n">2</span><span class="bic"><svg class="ic"><use href="#i-phone"/></svg></span><h3>Confirmation Call</h3><p>Our executive calls to confirm the details, quantity and exact address.</p></div><div class="p6c fade"><span class="n">3</span><span class="bic"><svg class="ic"><use href="#i-truck"/></svg></span><h3>Team Arrives</h3><p>A uniformed, verified executive reaches your doorstep at the selected time.</p></div><div class="p6c fade"><span class="n">4</span><span class="bic"><svg class="ic"><use href="#i-scale"/></svg></span><h3>Weigh & Sort</h3><p>Scrap is sorted by type and weighed on a digital scale in front of you.</p></div><div class="p6c fade"><span class="n">5</span><span class="bic"><svg class="ic"><use href="#i-tag"/></svg></span><h3>Fair Quote</h3><p>You get the live market rate per kg and the total value — accepted only if you agree.</p></div><div class="p6c fade"><span class="n">6</span><span class="bic"><svg class="ic"><use href="#i-wallet"/></svg></span><h3>Instant Payment</h3><p>Receive cash or UPI on the spot. We carry the scrap away. Done!</p></div>
+</div></div></section><section class="section alt"><div class="container"><div class="slots-grid">
+<div class="fade"><small class="tagl">PICKUP SLOTS</small><h2>Choose a Time That Suits You</h2><p class="lead2">We pick up seven days a week. Pick a slot while booking and our executive will call you 30 minutes before arriving.</p>
+<table class="slots"><thead><tr><th>Slot</th><th>Time</th><th>Availability</th></tr></thead><tbody>
+<tr><td>Morning</td><td>9 AM – 12 PM</td><td><span class="pill ok">Available</span></td></tr>
+<tr><td>Afternoon</td><td>12 PM – 3 PM</td><td><span class="pill ok">Available</span></td></tr>
+<tr><td>Evening</td><td>3 PM – 6 PM</td><td><span class="pill mid">Filling fast</span></td></tr>
+<tr><td>Late evening</td><td>6 PM – 8 PM</td><td><span class="pill ok">Available</span></td></tr></tbody></table></div>
+<div class="check-card fade"><h3>Keep these ready</h3><ul>
+<li><svg class="ic"><use href="#i-check"/></svg>Scrap sorted by type</li><li><svg class="ic"><use href="#i-check"/></svg>Clear access to the scrap area</li><li><svg class="ic"><use href="#i-check"/></svg>A phone number that stays reachable</li><li><svg class="ic"><use href="#i-check"/></svg>UPI app (if you want digital payment)</li><li><svg class="ic"><use href="#i-check"/></svg>Society gate pass, if required</li></ul></div></div></div></section><section class="section alt"><div class="container"><div class="head fade"><small>Helpful Tips</small><h2>How to Prepare Your Scrap for the Best Price</h2></div>
+<div class="tgrid">
+<div class="tip fade"><span>1</span><h4>Keep paper dry</h4><p>Wet paper weighs more but sells for less. Store newspapers and cartons in a dry place.</p></div><div class="tip fade"><span>2</span><h4>Separate by type</h4><p>Keep paper, plastic, metal and e-waste in separate bags or boxes to speed up weighing.</p></div><div class="tip fade"><span>3</span><h4>Flatten cartons</h4><p>Flatten cardboard boxes and tie them in bundles so they are easy to carry and count.</p></div><div class="tip fade"><span>4</span><h4>Empty & rinse bottles</h4><p>Remove liquids and caps from bottles. Clean plastic fetches a better rate.</p></div><div class="tip fade"><span>5</span><h4>Wipe your devices</h4><p>Back up and factory-reset phones and laptops before handing them over.</p></div><div class="tip fade"><span>6</span><h4>Keep metals clean</h4><p>Remove plastic, rubber or wood attached to metal items where possible.</p></div>
+</div></div></section><section class="section "><div class="container"><div class="dd">
+<div class="dd-c yes fade"><h3><svg class="ic"><use href="#i-check"/></svg> What we collect</h3><ul><li>Newspapers, books, magazines, cartons</li><li>PET bottles, containers, hard plastic</li><li>Iron, steel, aluminum, copper, brass</li><li>Laptops, mobiles, cables, batteries</li><li>Tyres, rubber, wood, old clothes</li></ul></div>
+<div class="dd-c no fade"><h3><span class="x">✕</span> What we do not collect</h3><ul><li>Wet or food-contaminated waste</li><li>Medical or biological waste</li><li>Hazardous chemicals &amp; explosives</li><li>Radioactive or sealed pressurised items</li><li>Broken glass &amp; sharp loose debris</li></ul></div>
+</div></div></section><section class="section "><div class="container"><div class="head fade"><small>Coverage</small><h2>Cities & Areas We Serve</h2><p>Same-day pickup is available in most of these areas.</p></div>
+<div class="areas fade"><span><svg class="ic"><use href="#i-pin"/></svg>Noida</span><span><svg class="ic"><use href="#i-pin"/></svg>Greater Noida</span><span><svg class="ic"><use href="#i-pin"/></svg>Delhi</span><span><svg class="ic"><use href="#i-pin"/></svg>Ghaziabad</span><span><svg class="ic"><use href="#i-pin"/></svg>Gurugram</span><span><svg class="ic"><use href="#i-pin"/></svg>Faridabad</span><span><svg class="ic"><use href="#i-pin"/></svg>Indirapuram</span><span><svg class="ic"><use href="#i-pin"/></svg>Vaishali</span><span><svg class="ic"><use href="#i-pin"/></svg>Dwarka</span><span><svg class="ic"><use href="#i-pin"/></svg>Rohini</span><span><svg class="ic"><use href="#i-pin"/></svg>Lajpat Nagar</span><span><svg class="ic"><use href="#i-pin"/></svg>Sector 62</span><span><svg class="ic"><use href="#i-pin"/></svg>Sector 18</span><span><svg class="ic"><use href="#i-pin"/></svg>Crossing Republik</span><span><svg class="ic"><use href="#i-pin"/></svg>Lucknow (soon)</span><span><svg class="ic"><use href="#i-pin"/></svg>Jaipur (soon)</span></div></div></section><!-- BENEFITS -->
+<section class="benefits" id="pricing">
+  <div class="container ben-grid">
+    <div class="ben"><span class="bic"><svg class="ic"><use href="#i-coin"/></svg></span><div><h4>Best Market Price</h4><p>Get the highest value for your scrap.</p></div></div>
+    <div class="ben"><span class="bic"><svg class="ic"><use href="#i-leaf"/></svg></span><div><h4>Eco-Friendly</h4><p>Help in reducing waste and pollution.</p></div></div>
+    <div class="ben"><span class="bic"><svg class="ic"><use href="#i-shield"/></svg></span><div><h4>Trusted &amp; Secure</h4><p>Reliable and transparent service.</p></div></div>
+    <div class="ben"><span class="bic"><svg class="ic"><use href="#i-truck"/></svg></span><div><h4>Convenient Pickup</h4><p>Book in minutes, we handle the rest.</p></div></div>
+  </div>
+</section>
+
+<section class="section alt"><div class="container"><div class="head fade"><small>Testimonials</small><h2>What Our Customers Say</h2><p>Rated 4.8 out of 5 by more than 10,000 happy customers.</p></div>
+<div class="testi-grid"><div class="testi fade"><span class="av i1">RM</span><div><h4>Rohan Mehta</h4><small class="loc2">Noida</small><div class="stars">★★★★★</div><p>“Very smooth experience. Pickup was on time and I got a great price for my scrap. Highly recommended!”</p></div></div><div class="testi fade"><span class="av i2">PS</span><div><h4>Priya Sharma</h4><small class="loc2">Delhi</small><div class="stars">★★★★★</div><p>“Easy to book, professional team and instant payment. Best service in my area.”</p></div></div><div class="testi fade"><span class="av i3">AV</span><div><h4>Amit Verma</h4><small class="loc2">Ghaziabad</small><div class="stars">★★★★★</div><p>“Great initiative for a cleaner India. Simple, reliable and eco-friendly.”</p></div></div><div class="testi fade"><span class="av i4">SK</span><div><h4>Sunita Kapoor</h4><small class="loc2">Gurugram</small><div class="stars">★★★★★</div><p>“Sold old newspapers and e-waste together. Weighing was transparent and honest.”</p></div></div><div class="testi fade"><span class="av i5">VG</span><div><h4>Vikas Gupta</h4><small class="loc2">Greater Noida</small><div class="stars">★★★★★</div><p>“We schedule monthly pickups for our shop cartons. They have never missed a single slot.”</p></div></div><div class="testi fade"><span class="av i6">NJ</span><div><h4>Neha Jain</h4><small class="loc2">Faridabad</small><div class="stars">★★★★★</div><p>“Our society ran a scrap drive with ScrapAdda and raised funds for the garden. Fantastic support!”</p></div></div></div></div></section><section class="section " id="faq"><div class="container"><div class="head fade"><small>Got Questions?</small><h2>Frequently Asked Questions</h2></div><div class="faq narrow-in"><div class="q"><button>When do I receive the payment?<i>+</i></button><div class="a"><p>Payment is made instantly after weighing, through cash or UPI, before our team leaves your doorstep.</p></div></div><div class="q"><button>What is the minimum quantity for pickup?<i>+</i></button><div class="a"><p>For households it is 10 kg. There is no minimum for high-value e-waste such as laptops, or for metals like copper.</p></div></div><div class="q"><button>Which areas do you serve?<i>+</i></button><div class="a"><p>Noida, Greater Noida, Delhi, Ghaziabad, Gurugram and Faridabad, with more cities being added every month.</p></div></div><div class="q"><button>Do you take bulk or industrial scrap?<i>+</i></button><div class="a"><p>Yes. Call us for factory, warehouse or society pickups. We bring a weighbridge-certified scale and give proper invoices.</p></div></div><div class="q"><button>How is my scrap weighed?<i>+</i></button><div class="a"><p>We use calibrated digital scales and weigh everything in front of you. You can watch the reading and take a photo if you wish.</p></div></div><div class="q"><button>Can I cancel or reschedule a pickup?<i>+</i></button><div class="a"><p>Yes. You can reschedule or cancel up to 2 hours before the slot by calling or messaging us. There is no cancellation fee.</p></div></div><div class="q"><button>What happens to my e-waste data?<i>+</i></button><div class="a"><p>Please wipe phones and laptops before handing them over. All devices are sent to authorised recyclers and never resold as working units.</p></div></div><div class="q"><button>Do you buy broken or non-working items?<i>+</i></button><div class="a"><p>Yes. Broken appliances, dead batteries and non-working electronics all have scrap value for their metal and components.</p></div></div></div></div></section>
+<section class="container ctaband-wrap"><div class="ctaband fade">
+  <div><h3>Prefer to talk to someone?</h3><p>Call +91 98765 43210 and we will book the pickup for you.</p></div>
+  <a href="contact.html" class="btn btn-white">Contact Us <svg class="ic"><use href="#i-arrow"/></svg></a>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="foot-news">
+      <div><h3>Get Scrap Rates &amp; Offers</h3><p>Subscribe and never miss a price update or pickup offer.</p></div>
+      <form class="news" id="newsForm"><input type="email" placeholder="Enter your email address" required><button type="submit">Subscribe <svg class="ic"><use href="#i-arrow"/></svg></button></form>
+    </div>
+    <div class="foot-cols">
+      <div class="fcol brand">
+        <a href="index.html" class="logo light"><svg class="logo-mark" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fc15e"/><stop offset="1" stop-color="#0b6a30"/></linearGradient></defs><rect width="48" height="48" rx="13" fill="url(#lg2)"/><g fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M13.66 20.24A11 11 0 0 1 34.34 20.24"/><path d="M34.34 27.76A11 11 0 0 1 13.66 27.76"/></g><g fill="#fff"><polygon points="38.1,18.9 34.9,25.5 30.6,21.6"/><polygon points="9.9,29.1 13.1,22.5 17.4,26.4"/></g><path d="M24 17.5c4 2.2 4.4 8.2 0 12.5-4.4-4.3-4-10.3 0-12.5z" fill="#b6f55a"/><path d="M24 20v8" stroke="#0b6a30" stroke-width="1.2" stroke-linecap="round"/></svg><span class="wm">Scrap<b>Adda</b></span></a>
+        <p>Your trusted partner for scrap collection, recycling and a cleaner tomorrow. We pick up paper, plastic, metal and e-waste right from your doorstep.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></a>
+        </div>
+      </div>
+      <div class="fcol"><h5>Quick Links</h5><a href="index.html">Home</a><a href="sell-scrap.html">Sell Scrap</a><a href="pickup.html">Schedule Pickup</a><a href="pricing.html">Pricing</a><a href="blog.html">Blog</a></div>
+      <div class="fcol"><h5>Scrap We Buy</h5><a href="sell-scrap.html">Paper Scrap</a><a href="sell-scrap.html">Plastic Scrap</a><a href="sell-scrap.html">Metal Scrap</a><a href="sell-scrap.html">E-Waste</a><a href="sell-scrap.html">Other Scrap</a></div>
+      <div class="fcol contact"><h5>Contact Us</h5>
+        <div class="ci"><svg class="ic"><use href="#i-phone"/></svg><span>+91 98765 43210</span></div>
+        <div class="ci"><svg class="ic"><use href="#i-mail"/></svg><span>support@scrapadda.in</span></div>
+        <div class="ci"><svg class="ic"><use href="#i-pin"/></svg><span>Noida, Uttar Pradesh, India</span></div>
+        <div class="ci"><svg class="ic"><use href="#i-clock"/></svg><span>Mon – Sun: 8:00 AM – 8:00 PM</span></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 ScrapAdda. All rights reserved.</span><span class="fl"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Refund Policy</a></span></div>
+  </div>
+</footer>
+
+
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
